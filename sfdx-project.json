@@ -1,0 +1,56 @@
+{
+  "packageDirectories": [
+    {
+      "versionName": "2024-08-09",
+      "versionNumber": "1.0.0.NEXT",
+      "path": "force-app",
+      "default": true,
+      "package": "api-service",
+      "versionDescription": "",
+      "dependencies": [
+        {
+          "package": "fflib-apex-mocks@1.0.0-2"
+        },
+        {
+          "package": "fflib-apex-common@1.0.0-1"
+        },
+        {
+          "package": "force-di@1.0.0-1"
+        },
+        {
+          "package": "at4dx@1.0.0-1"
+        },
+        {
+          "package": "core@1.0.0-1"
+        },
+        {
+          "package": "service@1.0.0-3"
+        },
+        {
+          "package": "service-escalations@1.0.0-1"
+        }
+      ]
+    }
+  ],
+  "name": "api-service",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "61.0",
+  "packageAliases": {
+    "api-service": "0Hoak0000000DEzCAM",
+    "service-escalations": "0Hoak0000000DDNCA2",
+    "service": "0Hoak0000000D25CAE",
+    "service@1.0.0-3": "04tak0000002nxVAAQ",
+    "core": "0Hoak0000000CyrCAE",
+    "core@1.0.0-1": "04tak0000002euDAAQ",
+    "at4dx": "0Hoak0000000CsPCAU",
+    "at4dx@1.0.0-1": "04tak0000002dq5AAA",
+    "force-di": "0Hoak0000000CqnCAE",
+    "force-di@1.0.0-1": "04tak0000002cafAAA",
+    "fflib-apex-common": "0Hoak0000000CnZCAU",
+    "fflib-apex-common@1.0.0-1": "04tak0000002cCTAAY",
+    "fflib-apex-mocks": "0Hoak0000000ClxCAE",
+    "fflib-apex-mocks@1.0.0-2": "04tak0000002bptAAA",
+    "service-escalations@1.0.0-1": "04tak0000002nhNAAQ"
+  }
+}
