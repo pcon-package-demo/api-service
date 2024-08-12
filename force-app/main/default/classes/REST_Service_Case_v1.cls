@@ -7,8 +7,19 @@ global with sharing class REST_Service_Case_v1 {
     ICasesSelector casesSelector = (ICasesSelector) Application.Selector.newInstance(
       Case.SObjectType
     );
-    List<Case> result = casesSelector.selectById(new Set<Id>{ c.Id });
+    return casesSelector.selectById(c.Id);
+  }
 
-    return result.isEmpty() ? null : result.get(0);
+  @HttpGet
+  global static Case getCase() {
+    RestRequest req = RestContext.request;
+
+    Id caseId = req.requestURI.substring(req.requestURI.lastIndexOf('/') + 1);
+
+    ICasesSelector casesSelector = (ICasesSelector) Application.Selector.newInstance(
+      Case.SObjectType
+    );
+
+    return casesSelector.selectById(caseId);
   }
 }
